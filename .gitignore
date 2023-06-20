@@ -1,0 +1,29 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.idea/
+
+# Editor and IDE files
+*.swp
+*~
+.DS_Store
+.vscode/
+
+# Testing
+.coverage
+htmlcov/
+
+# Dependency directories
+.env/
+/lib/
+/parts/
+.sass-cache/
+node_modules/
+bower_components/

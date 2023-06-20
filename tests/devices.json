@@ -1,0 +1,1031 @@
+{
+  "devices": [
+    {
+      "access": [],
+      "capabilities": [
+        "has_pza",
+        "has_sim_in_device",
+        "has_gsm_balance",
+        "has_ot_gate",
+        "has_offline_notifications",
+        "has_gsm",
+        "has_optional_guard",
+        "has_external_rf",
+        "has_firmware_upgrade",
+        "has_voltage_sensor",
+        "has_telpassword",
+        "has_thermostat_hysteresis",
+        "has_boiler_delay",
+        "has_pza_internet_weather",
+        "has_zth_inputs",
+        "has_thermometer_functions",
+        "has_trusted_phones",
+        "has_multiple_thermometers",
+        "has_thermostat",
+        "has_rf",
+        "has_serverside_events_notifications",
+        "has_alice",
+        "has_battery",
+        "has_lithium_battery",
+        "has_notifications"
+      ],
+      "device_type": {
+        "code": "T100",
+        "name": "H-1"
+      },
+      "widget_type": "zth",
+      "appliance_type": "thermostat",
+      "hardware_type": {
+        "code": "404",
+        "name": "404"
+      },
+      "id": 62953,
+      "ip": "192.168.1.1",
+      "is_active": true,
+      "online": true,
+      "owner_username": "user",
+      "user_id": 45905,
+      "last_receive_time": 1687260708,
+      "last_receive_time_relative": 6,
+      "is_legacy_service_mode_view": false,
+      "name": "Орёл.Котел",
+      "color": "#e50000",
+      "notes": "+12345678",
+      "serial": "9feda84fcd6b",
+      "visible_device_type": null,
+      "firmware_version": [
+        154,
+        148
+      ],
+      "is_configured_by_wizard": null,
+      "is_configured_by_zont_wizard": null,
+      "suggest_firmware_upgrade": true,
+      "graphs_config": {
+        "blocks": [
+          {
+            "sources": [
+              {
+                "class": "ZoneTargetTemp",
+                "params": {
+                  "zone_no": 1
+                }
+              },
+              {
+                "class": "ZoneWorkTime",
+                "params": {
+                  "zone_no": 1
+                }
+              },
+              {
+                "class": "HeatSetTempGraph",
+                "params": {
+                  "zone_no": 1
+                }
+              },
+              {
+                "class": "PZATempGraphSource"
+              },
+              {
+                "class": "TemperatureSensorGraphData",
+                "params": {
+                  "therm_id": "5b15595305b605000bc7b956"
+                }
+              },
+              {
+                "class": "TemperatureSensorGraphData",
+                "params": {
+                  "therm_id": "5a5740cb05b605008d006c2f"
+                }
+              },
+              {
+                "class": "TemperatureSensorGraphData",
+                "params": {
+                  "therm_id": "5be9a8d905b60501af8e0d1e"
+                }
+              },
+              {
+                "class": "TemperatureSensorGraphData",
+                "params": {
+                  "therm_id": "5af033d905b605000bd686bb"
+                }
+              },
+              {
+                "class": "RFTemperatureGraphSource",
+                "params": {
+                  "serial": "%100107%"
+                }
+              },
+              {
+                "class": "RFTemperatureGraphSource",
+                "params": {
+                  "serial": "%97544%"
+                }
+              },
+              {
+                "class": "OTGraphSource_CS"
+              },
+              {
+                "class": "OTGraphSource_BT"
+              },
+              {
+                "class": "OTGraphSource_RWT"
+              },
+              {
+                "class": "OTGraphSource_OT"
+              },
+              {
+                "class": "OTGraphSource_RML"
+              },
+              {
+                "class": "OTGraphSource_WP"
+              },
+              {
+                "class": "OTCHFlagGraphSource"
+              },
+              {
+                "class": "TemperatureSensorGraphData",
+                "params": {
+                  "therm_id": "5af1e3f605b605000b5a139d"
+                }
+              },
+              {
+                "class": "ThermostatModeGraphSource"
+              },
+              {
+                "class": "BoilerFailGraphSource"
+              },
+              {
+                "class": "NoPowerGraphSource"
+              },
+              {
+                "class": "ThermostatGateGraphSource"
+              }
+            ],
+            "height": "363px",
+            "height_mobile": "317px"
+          },
+          {
+            "sources": [
+              {
+                "class": "DHWTargetTemp"
+              },
+              {
+                "class": "OTGraphSource_DT"
+              },
+              {
+                "class": "OTGraphSource_FR"
+              },
+              {
+                "class": "OTDHWFlagGraphSource"
+              },
+              {
+                "class": "ThermostatModeGraphSource"
+              },
+              {
+                "class": "BoilerFailGraphSource"
+              },
+              {
+                "class": "NoPowerGraphSource"
+              },
+              {
+                "class": "ThermostatGateGraphSource"
+              }
+            ],
+            "height": "164px",
+            "height_mobile": null
+          },
+          {
+            "sources": [
+              {
+                "class": "ZTCGSMLevelGraphSource"
+              },
+              {
+                "class": "ZTCGSMBalanceGraphSource"
+              },
+              {
+                "class": "ZTCGSMState_HomeNetwork"
+              },
+              {
+                "class": "ZTCGSMState_Searching"
+              },
+              {
+                "class": "ZTCGSMState_Rejected"
+              },
+              {
+                "class": "ThermostatModeGraphSource"
+              },
+              {
+                "class": "BoilerFailGraphSource"
+              },
+              {
+                "class": "NoPowerGraphSource"
+              },
+              {
+                "class": "ThermostatGateGraphSource"
+              }
+            ],
+            "height": null,
+            "height_mobile": null
+          },
+          {
+            "sources": [
+              {
+                "class": "ZTCVoltageGraphSource"
+              },
+              {
+                "class": "ThermostatModeGraphSource"
+              },
+              {
+                "class": "BoilerFailGraphSource"
+              },
+              {
+                "class": "NoPowerGraphSource"
+              },
+              {
+                "class": "ThermostatGateGraphSource"
+              }
+            ],
+            "height": null,
+            "height_mobile": "199px"
+          }
+        ]
+      },
+      "cams_show": true,
+      "show_heating_tab": true,
+      "server_notifications": {
+        "offline": {
+          "enabled": true,
+          "timeout": 3600
+        },
+        "events": {
+          "enabled": false
+        }
+      },
+      "debug_text_messages_regexp": null,
+      "stationary_location": {
+        "loc": [
+          1.1,
+          1.1
+        ]
+      },
+      "cams": [],
+      "specialist_info": null,
+      "specialists": [],
+      "installation_state": null,
+      "maintenances": null,
+      "work_state": null,
+      "individual_device_name": "Орёл.Котел",
+      "individual_device_note": "",
+      "ui_settings": {
+        "heat_tab": {
+          "heating_circuits": {
+            "position": 0,
+            "show": true,
+            "internal_order": {
+              "0": {
+                "position": 0,
+                "show": true
+              },
+              "1": {
+                "position": 1,
+                "show": true
+              }
+            }
+          },
+          "boiler_heating_circuits": {
+            "position": 1,
+            "show": true,
+            "internal_order": {
+              "1": {
+                "position": 0,
+                "show": false
+              }
+            }
+          },
+          "heating_modes": {
+            "position": 2,
+            "show": true,
+            "internal_order": {
+              "0": {
+                "position": 0,
+                "show": true
+              },
+              "1": {
+                "position": 1,
+                "show": true
+              },
+              "2": {
+                "position": 2,
+                "show": true
+              },
+              "3": {
+                "position": 3,
+                "show": true
+              }
+            }
+          },
+          "thermometers": {
+            "position": 3,
+            "show": true,
+            "internal_order": {
+              "0": {
+                "position": 2,
+                "show": true
+              },
+              "1": {
+                "position": 1,
+                "show": true
+              },
+              "2": {
+                "position": 0,
+                "show": true
+              },
+              "3": {
+                "position": 3,
+                "show": true
+              },
+              "10001": {
+                "position": 4,
+                "show": true
+              }
+            }
+          },
+          "terminal": {
+            "position": 4,
+            "show": true,
+            "internal_order": {
+              "0": {
+                "position": 0,
+                "show": true
+              }
+            }
+          }
+        },
+        "icons": {
+          "heating_circuits": {},
+          "heating_modes": {}
+        }
+      },
+      "timezone": 3,
+      "last_guard_event": {
+        "time": 1516132017,
+        "event": "GuardOff"
+      },
+      "thermostat_error_input_polarity": "connect_ground",
+      "thermostat_inputconfig": {
+        "1": "off",
+        "2": "off"
+      },
+      "thermostat_enable_guard": false,
+      "boiler_info": {
+        "vendor": "Viesmann",
+        "model": "Vitodens 100"
+      },
+      "thermostat_ext_mode": 2,
+      "thermostat_mode": "econom",
+      "thermostat_gate": false,
+      "tempschedule": {
+        "day": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "week": {
+          "0": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "1": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "2": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "3": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "4": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "5": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "6": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            "M1",
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ]
+        }
+      },
+      "tempstep": 0.5,
+      "notifications": {
+        "alarm": {
+          "numbers": "+12345678",
+          "power-off": "call-then-sms",
+          "power-on": "call-then-sms",
+          "ignition": "call-then-sms",
+          "trunk-hood": "call-then-sms",
+          "doors": "call-then-sms",
+          "shock": "call-then-sms",
+          "tilt": "call-then-sms",
+          "moving": "call-then-sms",
+          "blackout": "call-then-sms",
+          "driver_call": "call-then-sms"
+        },
+        "guard": {
+          "numbers": "",
+          "on": "off",
+          "off": "off"
+        },
+        "info": {
+          "numbers": "+12345678",
+          "ecu_error": "sms",
+          "balance": "sms",
+          "fob_battery": "sms"
+        },
+        "thermostat": {
+          "temp_high": "call-then-sms",
+          "temp_low": "call-then-sms",
+          "therm_malf": "call-then-sms",
+          "boiler_fail": "call-then-sms"
+        },
+        "autoignition": {
+          "numbers": "",
+          "success": "off",
+          "fail": "off",
+          "breakdown": "off"
+        }
+      },
+      "thermostat_hysteresis": 0.5,
+      "thermostat_temps_limits": {
+        "0": {
+          "max": null,
+          "min": null
+        },
+        "1": {
+          "max": null,
+          "min": null
+        }
+      },
+      "temperature_alarm": {
+        "high": 60,
+        "low": 5
+      },
+      "sim_in_device": {
+        "sim_type": "foreign",
+        "sim_id": null,
+        "foreign_msisdn": "79874220176"
+      },
+      "balance": {
+        "ussd": "*100#",
+        "warning": true,
+        "limit": 5,
+        "value": 456
+      },
+      "trusted_phones": "+12345678",
+      "gsm_roaming": null,
+      "imei": "868325029372705",
+      "iccid": null,
+      "ot_enabled": true,
+      "ot_save_params": [
+        "bt",
+        "dt",
+        "fr",
+        "ot",
+        "rml",
+        "rwt",
+        "wp"
+      ],
+      "ot_min_setpoint": 30.0,
+      "ot_max_setpoint": 60.0,
+      "ot_max_ml": 100.0,
+      "ot_dhw_setpoint": 60.0,
+      "ot_min_wp": 0.0,
+      "ot_config": [
+        "ch"
+      ],
+      "ot_mode": "analog",
+      "ot_boiler_type": "Viessmann-vitodens-100",
+      "ot_show_dhw_control": true,
+      "rf_status": {
+        "s_%107134%": {
+          "time": 1687260323,
+          "type": "MLT",
+          "temp": 16.5,
+          "bat_v": 3.076171875,
+          "dbm": -50,
+          "bat": 15,
+          "slot": 2,
+          "version": 1682,
+          "uninitialized": false,
+          "name": "Улица"
+        },
+        "s_%100107%": {
+          "time": 1687260229,
+          "type": "MLW",
+          "water": false,
+          "temp": 24.8,
+          "bat_v": 3.134765625,
+          "dbm": -63,
+          "bat": 15,
+          "slot": 0,
+          "version": 1627,
+          "uninitialized": false,
+          "name": "Ванная протечка"
+        },
+        "s_%102329%": {
+          "type": "MLT",
+          "slot": 1,
+          "version": 1413,
+          "uninitialized": false,
+          "name": "Спальня",
+          "time": 1687260443,
+          "temp": 24.8,
+          "bat_v": 2.607421875,
+          "dbm": -75,
+          "bat": 9
+        },
+        "s_%97544%": {
+          "type": "MLW",
+          "slot": 3,
+          "version": 1627,
+          "uninitialized": false,
+          "name": "Кухня протечка",
+          "time": 1687260264,
+          "water": false,
+          "temp": 24.3,
+          "bat_v": 3.076171875,
+          "dbm": -49,
+          "bat": 15
+        }
+      },
+      "boiler_delay": {
+        "on": 600,
+        "off": 300
+      },
+      "pza": {
+        "enabled": true,
+        "curve": 8
+      },
+      "pza_max_delta": {
+        "enabled": true,
+        "delta": 2.0
+      },
+      "thermostat_ext_modes_config": {
+        "0": {
+          "name": "Прохладнее",
+          "active": true,
+          "schedule_number": null,
+          "zone_temp": {
+            "1": 23.0,
+            "0": 60.0
+          },
+          "zone_sensors": {
+            "1": null,
+            "0": null
+          },
+          "hidden": false
+        },
+        "1": {
+          "name": "Теплее",
+          "active": true,
+          "schedule_number": null,
+          "zone_temp": {
+            "1": 25.0,
+            "0": 60.0
+          },
+          "zone_sensors": {
+            "1": null,
+            "0": null
+          }
+        },
+        "2": {
+          "name": "Расписание",
+          "active": true,
+          "schedule_number": 1,
+          "zone_temp": {},
+          "zone_sensors": {}
+        },
+        "3": {
+          "name": "Отопление выключено",
+          "active": true,
+          "schedule_number": null,
+          "zone_temp": {
+            "1": 20.0,
+            "0": false
+          },
+          "zone_sensors": {
+            "1": null,
+            "0": null
+          }
+        },
+        "4": {
+          "name": "",
+          "active": false
+        },
+        "5": {
+          "name": "",
+          "active": false
+        },
+        "6": {
+          "name": "",
+          "active": false
+        },
+        "7": {
+          "name": "",
+          "active": false
+        },
+        "8": {
+          "name": "",
+          "active": false
+        },
+        "9": {
+          "name": "",
+          "active": false
+        }
+      },
+      "thermostat_target_temps": {
+        "0": {
+          "manual": false,
+          "temp": 60.0
+        },
+        "1": {
+          "manual": false,
+          "temp": 25.0
+        }
+      },
+      "thermostat_ext_modes_advanced": true,
+      "thermostat_relay_mode": "by_heat",
+      "ot_gate_enabled": false,
+      "use_internet_weather_for_pza": false,
+      "thermometers": [
+        {
+          "is_assigned_to_slot": true,
+          "slot": 2,
+          "uuid": "5b15595305b605000bc7b956",
+          "serial": "%107134%",
+          "type": "radio",
+          "name": "Улица",
+          "color": "#00d600",
+          "limits": {
+            "low": null,
+            "high": null
+          },
+          "function": "outside",
+          "functions": [
+            {
+              "f": "outside"
+            }
+          ],
+          "sort": 0,
+          "last_state": "ok",
+          "last_value": 16.5,
+          "last_value_time": 1687260699
+        },
+        {
+          "is_assigned_to_slot": true,
+          "slot": 1,
+          "uuid": "5a5740cb05b605008d006c2f",
+          "serial": "00080334E1A510",
+          "type": "wired",
+          "name": "Котельная",
+          "color": "#a05be5",
+          "limits": {
+            "low": 5,
+            "high": 40
+          },
+          "function": "control-reserve",
+          "functions": [
+            {
+              "f": "control-reserve",
+              "zone": 1
+            }
+          ],
+          "sort": 1,
+          "last_state": "ok",
+          "last_value": 34.0,
+          "last_value_time": 1687260699
+        },
+        {
+          "is_assigned_to_slot": true,
+          "slot": 0,
+          "uuid": "5be9a8d905b60501af8e0d1e",
+          "serial": "000803368AD810",
+          "type": "wired",
+          "name": "Коллектор подача",
+          "color": "#e55bce",
+          "limits": {
+            "low": 5,
+            "high": 60
+          },
+          "function": "heat",
+          "functions": [
+            {
+              "f": "heat",
+              "zone": 1
+            }
+          ],
+          "sort": 2,
+          "last_state": "ok",
+          "last_value": 27.7,
+          "last_value_time": 1687260699
+        },
+        {
+          "is_assigned_to_slot": true,
+          "slot": 3,
+          "uuid": "5af033d905b605000bd686bb",
+          "serial": "%102329%",
+          "type": "radio",
+          "name": "Спальня",
+          "color": "#a05be5",
+          "limits": {
+            "low": 5,
+            "high": 35
+          },
+          "function": "control",
+          "functions": [
+            {
+              "f": "control",
+              "zone": 1
+            }
+          ],
+          "sort": 3,
+          "last_state": "ok",
+          "last_value": 24.8,
+          "last_value_time": 1687260699
+        },
+        {
+          "is_assigned_to_slot": false,
+          "slot": null,
+          "uuid": "5af032f005b605000bd63ff9",
+          "serial": "%100673%",
+          "type": "radio",
+          "name": "Гостиная",
+          "color": "#a05be5",
+          "limits": {
+            "low": null,
+            "high": 35
+          },
+          "function": null,
+          "functions": [],
+          "sort": 999,
+          "last_state": "malfunction",
+          "last_value": null,
+          "last_value_time": 1545512854
+        },
+        {
+          "is_assigned_to_slot": false,
+          "slot": null,
+          "uuid": "5af1e3f605b605000b5a139d",
+          "serial": "%102710%",
+          "type": "radio",
+          "name": "Улица",
+          "color": "#00e5e5",
+          "limits": {
+            "low": null,
+            "high": null
+          },
+          "function": "outside",
+          "functions": [
+            {
+              "f": "outside"
+            }
+          ],
+          "sort": 999,
+          "last_state": null,
+          "last_value": null,
+          "last_value_time": null
+        }
+      ],
+      "io": {
+        "guard-state": "disabled",
+        "gsm-state": {
+          "level": 12,
+          "state": "home-network",
+          "operator": "MTS"
+        },
+        "balance-value": 456,
+        "voltage": 13.5,
+        "power-source": "main",
+        "last-boiler-state": {
+          "time": 1687260700,
+          "boiler_work_time": 0,
+          "thermostat_mode": "econom",
+          "thermostat_mode_int": 2,
+          "gate": false,
+          "target_temp": 25.0,
+          "power": true,
+          "fail": false,
+          "ot": {
+            "s": [
+              "ch"
+            ],
+            "cs": 32.0,
+            "ff": {
+              "f": [],
+              "c": 0
+            },
+            "rml": 0.0,
+            "bt": 28.09765625,
+            "dt": 54.3984375
+          },
+          "pza_t": 32.6,
+          "dhw_t": 60.0,
+          "zones": {
+            "1": {
+              "target_temp": 25.0,
+              "worktime": 0
+            }
+          }
+        }
+      },
+      "filetransfers": [],
+      "internet_weather": 15.3,
+      "asp_billing": {
+        "in_service": true,
+        "allowed_for_user": false
+      }
+    }
+  ],
+  "device_tree": null,
+  "ok": true
+}
