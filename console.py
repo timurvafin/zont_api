@@ -1,5 +1,4 @@
 import sys
-import logging
 from zont_api import ZontAPI
 
 if len(sys.argv) < 4:
