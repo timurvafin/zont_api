@@ -1,4 +1,4 @@
-name: Zont API CI
+name: Zont API
 
 on:
   push:
