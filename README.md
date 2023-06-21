@@ -30,7 +30,10 @@ print(thermometers)
 
 # Update device settings
 api.update_device({"ot_config": ["ch", "dhw"]})
-```
+
+# Enable or disable DHW
+api.enable_dhw()
+api.disable_dhw()
 
 Replace 'your_zont_username' and 'your_zont_password' with your actual Zont Online credentials. Also, provide the device ID (dev_id) for the specific device you want to interact with.
 
