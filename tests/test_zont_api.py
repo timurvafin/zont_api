@@ -92,6 +92,22 @@ def test_get_thermometers(api, requests_mock, devices_response_json):
     assert result == expected_thermometers
 
 
+def test_get_heating_modes(api, requests_mock, devices_response_json):
+    requests_mock.post(
+        "https://lk.zont-online.ru/api/devices", json=devices_response_json
+    )
+
+    expected_heating_modes = {
+        "0": "Прохладнее",
+        "1": "Теплее",
+        "2": "Расписание",
+        "3": "Отопление выключено"
+    }
+
+    result = api.get_heating_modes()
+
+    assert result == expected_heating_modes
+
 def test_update_device(api, requests_mock, update_device_response_json):
     requests_mock.post(
         "https://lk.zont-online.ru/api/update_device", json=update_device_response_json

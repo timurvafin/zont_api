@@ -28,6 +28,10 @@ print(device_info)
 thermometers = api.get_thermometers()
 print(thermometers)
 
+# Get heating modes
+heating_modes = api.get_heating_modes()
+print(heating_modes)
+
 # Update device settings
 api.update_device({"ot_config": ["ch", "dhw"]})
 
