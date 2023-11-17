@@ -56,6 +56,21 @@ DeviceNotFoundError is raised when a device with the specified ID is not found.
 ResponseError is raised when the API response does not contain the expected keys or values.
 Make sure to handle these exceptions appropriately in your code.
 
+## Development
+
+### console.py
+
+`console.py` is a Python script for interacting with the ZontAPI. It requires three command-line arguments: ZontAPI username, password, and device ID.
+
+
+```
+python console.py <username> <password> <dev_id>
+```
+
+The script performs the following operations:
+1. Fetches and displays thermometer data.
+2. Enables and disables Domestic Hot Water (DHW), providing success or failure feedback.
+
 ## License
 
 This library is licensed under the MIT License. See the LICENSE file for more information.
