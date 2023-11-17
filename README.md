@@ -71,6 +71,23 @@ The script performs the following operations:
 1. Fetches and displays thermometer data.
 2. Enables and disables Domestic Hot Water (DHW), providing success or failure feedback.
 
+## Running Tests
+
+Upgrade pip and install packages:
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Run tests in the `tests/` directory:
+
+```bash
+python -m pytest tests/
+```
+
+Ensure you're in the correct directory when running these commands.
+
 ## License
 
 This library is licensed under the MIT License. See the LICENSE file for more information.

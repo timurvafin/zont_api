@@ -1,8 +1,8 @@
 import pytest
 import requests_mock
 import json
-from zont_api import ZontAPI
 
+from zont_api import ZontAPI
 
 @pytest.fixture
 def api():
