@@ -15,6 +15,10 @@ print("\n\nGET THERMOMETERS")
 thermometer_data = api.get_thermometers()
 print(f"Thermometer data: {thermometer_data}")
 
+print("\n\nGET HEATING MODES")
+heating_modes = api.get_heating_modes()
+print(f"Heating modes: {heating_modes}")
+
 print("\n\nENABLE DHW")
 response = api.enable_dhw()
 if response:

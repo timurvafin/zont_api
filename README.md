@@ -28,12 +28,17 @@ print(device_info)
 thermometers = api.get_thermometers()
 print(thermometers)
 
+# Get heating modes
+heating_modes = api.get_heating_modes()
+print(heating_modes)
+
 # Update device settings
 api.update_device({"ot_config": ["ch", "dhw"]})
 
 # Enable or disable DHW
 api.enable_dhw()
 api.disable_dhw()
+```
 
 Replace 'your_zont_username' and 'your_zont_password' with your actual Zont Online credentials. Also, provide the device ID (dev_id) for the specific device you want to interact with.
 
@@ -49,11 +54,43 @@ This will enable logging of the HTTP requests and responses to the console.
 
 ## Error Handling
 
-The ZontAPI library raises two custom exceptions: DeviceNotFoundError and ResponseError.
+The ZontAPI library raises two custom exceptions: `DeviceNotFoundError` and `ResponseError`.
 
 DeviceNotFoundError is raised when a device with the specified ID is not found.
 ResponseError is raised when the API response does not contain the expected keys or values.
 Make sure to handle these exceptions appropriately in your code.
+
+## Development
+
+### console.py
+
+`console.py` is a Python script for interacting with the ZontAPI. It requires three command-line arguments: ZontAPI username, password, and device ID.
+
+
+```
+python console.py <username> <password> <dev_id>
+```
+
+The script performs the following operations:
+1. Fetches and displays thermometer data.
+2. Enables and disables Domestic Hot Water (DHW), providing success or failure feedback.
+
+## Running Tests
+
+Upgrade pip and install packages:
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Run tests in the `tests/` directory:
+
+```bash
+python -m pytest tests/
+```
+
+Ensure you're in the correct directory when running these commands.
 
 ## License
 

@@ -109,11 +109,23 @@ class ZontAPI:
 
         for thermometer in thermometers:
             if thermometer.get("last_state") == "ok":
-                name = thermometer.get("name")
-                last_value = thermometer.get("last_value")
-                thermometer_data[name] = last_value
+                thermometer_data[thermometer.get("name")] = thermometer.get("last_value")
 
-        return thermometer_data
+        return thermometer_data        
+
+
+    def get_heating_modes(self):
+        device_data = self.__get_device_data()
+
+        heating_modes = device_data.get("thermostat_ext_modes_config", {})
+        heating_modes_data = {}    
+
+        for mode_id in heating_modes:
+            if heating_modes[mode_id].get("active"):
+                heating_modes_data[mode_id] = heating_modes[mode_id].get("name")
+
+        return heating_modes_data
+
 
     def update_device(self, data):
         request = {"device_id": self.dev_id, **data}
